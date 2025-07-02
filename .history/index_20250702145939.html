@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diógenes Leme - Corretor de Imóveis</title>
+  <meta name="description" content="Investimentos imobiliários exclusivos no litoral de SC. Acesso antecipado aos lançamentos mais cobiçados. Consultoria premium.">
+  <link rel="icon" type="image/png" href="assets/logo-dourado.png">
+  <link rel="stylesheet" href="css/palette.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #0a1420; color: #fff; }
+    .dark-section { background: #0a1420; color: #fff; }
+    .gold { color: var(--dourado); }
+    .blue-bg { background: var(--azul-escuro); }
+    .section-img { border-radius: 16px; box-shadow: 0 4px 24px rgba(9,44,74,0.18); }
+    .section-content { max-width: 1200px; margin: 0 auto; padding: 3rem 1rem; }
+    .section-flex { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; }
+    .section-flex.reverse { flex-direction: row-reverse; }
+    .section-flex img { max-width: 400px; width: 100%; }
+    .impact-quote { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .empreendimentos { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin: 2rem 0; }
+    .empreendimento-card { background: #181f2a; border-radius: 12px; box-shadow: 0 2px 8px rgba(9,44,74,0.18); padding: 1rem; text-align: center; transition: box-shadow 0.2s, transform 0.2s; }
+    .empreendimento-card img { border-radius: 8px; max-width: 100%; margin-bottom: 1rem; }
+    .empreendimento-card h3 { color: var(--dourado); margin: 0.5rem 0 0.2rem 0; }
+    .empreendimento-card p { color: #bfc9d1; font-size: 1rem; margin: 0; }
+    .cta-section { background: url('assets/portfolio-1.png') center/cover no-repeat; color: #fff; text-shadow: 0 2px 8px #000; padding: 5rem 1rem; text-align: center; }
+    .cta-section .cta-btn { background: var(--dourado); color: var(--azul-escuro); font-size: 1.3rem; padding: 1rem 2.5rem; border-radius: 8px; font-weight: bold; margin-top: 2rem; display: inline-block; }
+    .cta-section .cta-btn:hover { background: var(--azul-claro); color: #fff; }
+    @media (max-width: 900px) { .section-flex { flex-direction: column; } .section-flex.reverse { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo-dourado.png" alt="Logo Dourado" class="logo">
+    <div class="menu-toggle" aria-label="Abrir menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Banner Principal -->
+  <section class="dark-section" style="position:relative;">
+    <img src="assets/banner-principal.png" alt="Banner Principal" style="width:100%;max-height:480px;object-fit:cover;filter:brightness(0.6);">
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+      <h1 style="font-size:2.5rem;font-weight:800;letter-spacing:1px;">INVESTIMENTOS IMOBILIÁRIOS EXCLUSIVOS NO LITORAL DE SANTA CATARINA</h1>
+      <h2 style="font-size:1.5rem;font-weight:600;margin:1rem 0;">ACESSO ANTECIPADO AOS LANÇAMENTOS MAIS COBIÇADOS</h2>
+      <a href="contato.html" class="cta-btn">Conheça as oportunidades</a>
+    </div>
+  </section>
+  <!-- Valorização Consistente -->
+  <section class="section-content section-flex blue-bg">
+    <img src="assets/portfolio-2.png" alt="Valorização Consistente" class="section-img">
+    <div>
+      <h2 class="gold">Valorização consistente</h2>
+      <p>Região com crescimento imobiliário de 15-20% ao ano.<br>Mercado de locação aquecido – Alta demanda por temporada e executivos.<br>Infraestrutura consolidada – Aeroporto, shopping centers e hospitais de referência.<br>Lifestyle premium – Qualidade de vida incomparável no Brasil.</p>
+      <a href="contato.html" class="cta-btn">Fale agora</a>
+    </div>
+  </section>
+  <!-- Acesso Exclusivo a Pré-lançamentos -->
+  <section class="section-content section-flex reverse dark-section">
+    <img src="assets/portfolio-3.png" alt="Acesso Exclusivo" class="section-img">
+    <div>
+      <h2 class="gold">Acesso exclusivo a pré-lançamentos</h2>
+      <ul>
+        <li>Receba oportunidades antes do mercado</li>
+        <li>Condições especiais e melhores unidades</li>
+        <li>Análise completa de rentabilidade</li>
+        <li>Atendimento personalizado</li>
+        <li>Especialização no litoral premium</li>
+        <li>Transparência nas negociações</li>
+      </ul>
+      <a href="contato.html" class="cta-btn">Quero acesso exclusivo</a>
+    </div>
+  </section>
+  <!-- Depoimento/Frase de Impacto -->
+  <section class="section-content section-flex blue-bg">
+    <img src="assets/equipe.png" alt="Corretor" class="section-img">
+    <div>
+      <div class="impact-quote gold">“O mercado imobiliário premium do litoral catarinense oferece as melhores oportunidades de investimento do país. Nossa missão é conectar investidores inteligentes às oportunidades exclusivas que só quem está dentro do mercado consegue acessar.”</div>
+      <div style="font-weight:600;">Diógenes Leme</div>
+    </div>
+  </section>
+  <!-- Oportunidades Disponíveis -->
+  <section class="section-content dark-section">
+    <h2 class="gold" style="text-align:center;">Oportunidades Disponíveis</h2>
+    <div class="empreendimentos">
+      <div class="empreendimento-card">
+        <img src="assets/portfolio-1.png" alt="Monterosso">
+        <h3>Monterosso</h3>
+        <p>CA Empreendimentos - Perequê, SC</p>
+      </div>
+      <div class="empreendimento-card">
+        <img src="assets/portfolio-2.png" alt="Passione">
+        <h3>Passione</h3>
+        <p>Construtora AMA - Perequê, SC</p>
+      </div>
+      <div class="empreendimento-card">
+        <img src="assets/portfolio-3.png" alt="Majestic">
+        <h3>Majestic</h3>
+        <p>Construtora THC - Perequê, SC</p>
+      </div>
+    </div>
+  </section>
+  <!-- Conheça Diógenes Leme -->
+  <section class="section-content section-flex blue-bg">
+    <img src="assets/equipe.png" alt="Equipe" class="section-img">
+    <div>
+      <h2 class="gold">Conheça Diógenes Leme</h2>
+      <p>Minha trajetória sempre foi guiada por um princípio: <b>“Não espero ter tudo perfeito para começar — faço o melhor com o que tenho, todos os dias.”</b><br><br>Conectar investidores inteligentes às oportunidades exclusivas do litoral catarinense, com transparência, excelência e atendimento personalizado.</p>
+    </div>
+  </section>
+  <!-- Chamada para ação -->
+  <section class="cta-section">
+    <h2 style="font-size:2.2rem;font-weight:800;">VAMOS ENCONTRAR SEU PRÓXIMO INVESTIMENTO</h2>
+    <p style="font-size:1.2rem;max-width:700px;margin:1.5rem auto;">As oportunidades mais exclusivas do litoral catarinense estão disponíveis apenas para investidores qualificados. Agende uma consultoria estratégica personalizada e tenha acesso antecipado aos lançamentos que definirão o mercado premium da região.</p>
+    <a href="contato.html" class="cta-btn">Agende sua consultoria</a>
+  </section>
+  <footer class="dark-section" style="padding:2rem 1rem 1rem 1rem;text-align:center;">
+    <div style="margin-bottom:1rem;">
+      <a href="https://wa.me/554898160085" target="_blank" aria-label="WhatsApp" style="color:var(--dourado);font-size:1.7rem;margin:0 0.5rem;">💬</a>
+      <a href="https://instagram.com/diogenesimoveis" target="_blank" aria-label="Instagram" style="color:var(--dourado);font-size:1.7rem;margin:0 0.5rem;">📸</a>
+      <a href="mailto:resendeimoveis@gmail.com" aria-label="E-mail" style="color:var(--dourado);font-size:1.7rem;margin:0 0.5rem;">✉️</a>
+    </div>
+    <div style="margin-bottom:1rem;">
+      <img src="assets/contato-bg.png" alt="QR Code Contato" style="max-width:90px;vertical-align:middle;">
+    </div>
+    <p style="color:var(--cinza);">Rua 236, 314, Meia Praia, Itapema – SC | (48) 9 9816-0085 | resendeimoveis@gmail.com</p>
+    <p style="color:var(--cinza);">&copy; 2025 Diógenes Leme - Corretor de Imóveis</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html> 
