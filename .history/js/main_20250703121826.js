@@ -18,46 +18,39 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialize Portfolio Swiper
-    try {
-        const portfolioSwiper = new Swiper('.portfolio-swiper', {
-            effect: 'slide',
-            grabCursor: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
+    const portfolioSwiper = new Swiper('.portfolio-swiper', {
+        effect: 'cards',
+        grabCursor: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
             },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-        });
-
-        console.log('Swiper initialized successfully');
-    } catch (error) {
-        console.error('Error initializing Swiper:', error);
-    }
+        },
+    });
 });
 
 // ===== HEADER SCROLL EFFECT =====

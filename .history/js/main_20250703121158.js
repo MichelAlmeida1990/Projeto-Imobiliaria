@@ -16,48 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.remove('show');
         });
     });
-
-    // Initialize Portfolio Swiper
-    try {
-        const portfolioSwiper = new Swiper('.portfolio-swiper', {
-            effect: 'slide',
-            grabCursor: true,
-            slidesPerView: 1,
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-        });
-
-        console.log('Swiper initialized successfully');
-    } catch (error) {
-        console.error('Error initializing Swiper:', error);
-    }
 });
 
 // ===== HEADER SCROLL EFFECT =====
@@ -370,5 +328,38 @@ function toggleDarkMode() {
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
 }
+
+// ===== PORTFOLIO SWIPER =====
+const portfolioSwiper = new Swiper('.portfolio-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
 
 console.log('🏢 Diógenes Leme - Website Premium carregado com sucesso!'); 
