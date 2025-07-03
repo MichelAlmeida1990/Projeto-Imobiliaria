@@ -441,7 +441,33 @@ ul {
 
 .about__text {
   margin-bottom: 1.5rem;
-  line-height: 1.7;
+  color: #4a4a4a;
+  font-size: 1.1rem;
+}
+
+.about__text--bio {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--azul-escuro);
+  border-left: 3px solid var(--dourado);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  background: linear-gradient(to right, rgba(236, 186, 97, 0.1), transparent);
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.about__text--bio::before {
+  content: '"';
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+  color: var(--dourado);
+  opacity: 0.3;
 }
 
 .about__features {
@@ -1010,6 +1036,17 @@ ul {
     height: 50px;
     font-size: 1.5rem;
   }
+
+  .about__text--bio {
+    font-size: 1.1rem;
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+
+  .about__text--bio::before {
+    font-size: 3rem;
+    top: -0.75rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1045,5 +1082,15 @@ ul {
 
   .footer__logo-img {
     height: 55px;
+  }
+
+  .about__text--bio {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .about__text--bio::before {
+    font-size: 2.5rem;
+    top: -0.5rem;
   }
 } 
