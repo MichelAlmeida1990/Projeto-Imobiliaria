@@ -24,12 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             grabCursor: true,
             slidesPerView: 1,
             spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
+            centeredSlides: false,
+            loop: false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
