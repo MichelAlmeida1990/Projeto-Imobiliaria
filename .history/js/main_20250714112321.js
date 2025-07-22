@@ -17,46 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize São João Climaco Simple Gallery
-    console.log('Initializing São João Climaco Simple Gallery...');
-    
-    const galleryImages = [
-        'assets/sao-joao-climaco-1.jpeg?v=4',
-        'assets/sao-joao-climaco-2.jpeg?v=4',
-        'assets/sao-joao-climaco-3.jpeg?v=4',
-        'assets/sao-joao-climaco-4.jpeg?v=4',
-        'assets/sao-joao-climaco-5.jpeg?v=4'
-    ];
-    
-    let currentImageIndex = 0;
-    const galleryImg = document.querySelector('.sao-joao-gallery img');
-    const galleryCounter = document.querySelector('.gallery-counter');
-    const prevBtn = document.querySelector('.gallery-prev');
-    const nextBtn = document.querySelector('.gallery-next');
-    
-    function updateImage() {
-        if (galleryImg) {
-            galleryImg.src = galleryImages[currentImageIndex];
-            galleryCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
-        }
-    }
-    
-    if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
-            updateImage();
-        });
-    }
-    
-    if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
-            updateImage();
-        });
-    }
-    
-    console.log('São João Climaco Simple Gallery initialized successfully');
-
     // Initialize Portfolio Swiper
     try {
         const portfolioSwiper = new Swiper('.portfolio-swiper', {

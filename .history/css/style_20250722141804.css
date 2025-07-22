@@ -664,10 +664,6 @@ ul {
 
 /* Responsive adjustments for São João section */
 @media (max-width: 768px) {
-  .sao-joao-carousel {
-    height: 400px !important;
-  }
-  
   .sao-joao-details {
     flex-direction: column;
     gap: 20px;
@@ -688,8 +684,8 @@ ul {
     padding: 60px 0;
   }
   
-  .sao-joao-carousel {
-    height: 350px !important;
+  .sao-joao-image {
+    padding-bottom: 100%; /* Mantém proporção quadrada no mobile também */
   }
   
   .price-new {
