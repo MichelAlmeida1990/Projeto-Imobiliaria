@@ -17,7 +17,47 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Initialize São João Climaco Swiper
+    try {
+        const saoJoaoSwiper = new Swiper('.sao-joao-carousel', {
+            effect: 'slide',
+            grabCursor: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: false,
+            loop: false,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.sao-joao-carousel .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.sao-joao-carousel .swiper-button-next',
+                prevEl: '.sao-joao-carousel .swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+            },
+        });
 
+        console.log('São João Climaco Swiper initialized successfully');
+    } catch (error) {
+        console.error('Error initializing São João Climaco Swiper:', error);
+    }
 
     // Initialize Portfolio Swiper
     try {
