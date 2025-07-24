@@ -1118,13 +1118,12 @@ ul {
 }
 
 .footer__contact-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   opacity: 0.9;
-  line-height: 1.5;
+  line-height: 1.4;
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  max-width: 100%;
 }
 
 .footer__bottom {

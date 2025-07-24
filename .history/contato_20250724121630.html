@@ -132,7 +132,50 @@
             </div>
         </section>
 
-
+        <!-- Visual Presentation Section -->
+        <section class="section section--visual">
+            <div class="container">
+                <div class="visual-presentation">
+                    <div class="visual-presentation__content">
+                        <div class="visual-presentation__text">
+                            <span class="section__subtitle">Experiência Premium</span>
+                            <h2 class="section__title">
+                                Consultoria <span class="section__title-accent">Personalizada</span>
+                            </h2>
+                            <p class="section__description">
+                                Cada cliente recebe atenção exclusiva e personalizada. 
+                                Sua jornada imobiliária começa com uma conversa sobre seus sonhos e objetivos.
+                            </p>
+                            <div class="visual-presentation__features">
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Atendimento 24/7</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Consultoria Gratuita</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Portfólio Exclusivo</span>
+                                </div>
+                            </div>
+                            
+                            <div class="visual-presentation__cta">
+                                <a href="https://wa.me/5511917883748?text=Olá%20Diógenes,%20gostaria%20de%20agendar%20uma%20consultoria%20gratuita" 
+                                   class="btn btn--primary" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Agendar Consultoria Gratuita
+                                </a>
+                            </div>
+                        </div>
+                        <div class="visual-presentation__image">
+                            <img src="assets/2.png" alt="Consultoria Imobiliária Premium" class="visual-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Contact Form Section -->
         <section class="section section--dark contact">
@@ -624,7 +667,90 @@
             line-height: 1.6;
         }
         
-
+        /* Visual Presentation Section */
+        .section--visual {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 6rem 0;
+        }
+        
+        .visual-presentation {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .visual-presentation__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .visual-presentation__text {
+            padding-right: 2rem;
+        }
+        
+        .visual-presentation__features {
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            color: var(--azul-escuro);
+        }
+        
+        .feature i {
+            color: var(--dourado);
+            font-size: 1.2rem;
+        }
+        
+        .visual-presentation__cta {
+            margin-top: 2rem;
+        }
+        
+        .visual-presentation__image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(9, 44, 74, 0.15);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .visual-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .visual-presentation__image:hover .visual-image {
+            transform: scale(1.05);
+        }
+        
+        .visual-presentation__image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(236, 186, 97, 0.1), rgba(9, 44, 74, 0.1));
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .visual-presentation__image:hover::before {
+            opacity: 1;
+        }
         
         @media (max-width: 768px) {
             .contact-methods {
@@ -639,6 +765,24 @@
                 position: static;
                 margin-top: 1rem;
                 max-width: none;
+            }
+            
+            .visual-presentation__content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .visual-presentation__text {
+                padding-right: 0;
+                text-align: center;
+            }
+            
+            .visual-presentation__features {
+                justify-content: center;
+            }
+            
+            .feature {
+                justify-content: center;
             }
         }
     </style>

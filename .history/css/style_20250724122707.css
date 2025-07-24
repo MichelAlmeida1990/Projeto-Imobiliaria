@@ -1072,7 +1072,7 @@ ul {
 /* Contact Cards Grid */
 .footer__contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -1082,12 +1082,12 @@ ul {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  padding: 2.5rem;
+  padding: 2rem;
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
+  gap: 1.5rem;
   transition: all 0.3s ease;
-  min-height: 120px;
+  min-height: 100px;
 }
 
 .footer__contact-card:hover {
@@ -1118,13 +1118,12 @@ ul {
 }
 
 .footer__contact-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   opacity: 0.9;
-  line-height: 1.5;
+  line-height: 1.4;
   word-break: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
-  max-width: 100%;
 }
 
 .footer__bottom {
